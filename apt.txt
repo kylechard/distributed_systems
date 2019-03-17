@@ -1,3 +1,2 @@
-libcr-dev 
-mpich2
-mpich2-doc
+openmpi-bin 
+libopenmpi-dev
