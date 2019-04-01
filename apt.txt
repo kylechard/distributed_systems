@@ -1,2 +1,3 @@
 openmpi-bin 
 libopenmpi-dev
+rabbitmq-server
