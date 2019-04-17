@@ -1,11 +1,11 @@
 import zmq
 context = zmq.Context()
 
-php = "tcp://localhost:7777"
 s = context.socket(zmq.REQ)
 
-s.connect(php)
-s.send_string("Hello World")
+s.connect('tcp://127.0.0.1:7777')
+
+s.send_string("Ping")
 
 message = s.recv_string()
 s.send_string("STOP")
