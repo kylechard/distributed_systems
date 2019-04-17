@@ -2,7 +2,7 @@ import zmq
 
 context = zmq.Context()
 s = context.socket(zmq.SUB)
-s.connect('tcp://127.0.0.1:7778')
+s.connect('tcp://127.0.0.1:7777')
 s.setsockopt_string(zmq.SUBSCRIBE, '')
 
 print("GETTING")
