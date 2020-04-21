@@ -1,5 +1,5 @@
 import rpyc
-from rpyc.utils.server import ForkingServer
+from rpyc.utils.server import ThreadedServer
 
 class DBList(rpyc.Service):
     value = []
@@ -12,5 +12,5 @@ class DBList(rpyc.Service):
         return self.value
 
 if __name__ == "__main__":
-    server = ForkingServer(DBList, port = 7777)
+    server = ThreadedServer(DBList, port = 7777)
     server.start()
