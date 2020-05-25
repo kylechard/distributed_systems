@@ -2,4 +2,6 @@ parsl==0.7.2
 mpi4py
 rpyc
 pika
-python-ldap
+pyspark
+nbserverproxy
+py4j
