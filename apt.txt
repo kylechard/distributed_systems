@@ -6,3 +6,4 @@ python-dev
 libldap2-dev
 libssl-dev
 ldap-utils
+openjdk-8-jre-headless
